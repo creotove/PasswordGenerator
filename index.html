@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator - Creotove</title>
+</head>
+<body onload="bodyLoad()">
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="password-field">
+            <input type="text" value="Password" class="disabledpass" id="passwordfield" readonly="readonly"><button class="copy" id="copy"><i class="fa-solid fa-copy"></i></button>
+        </div>
+        <div class="">
+            <h1>Tick Check box as per your need</h1>
+            <input type="checkbox" value="Alphabets" class="chkbox" id="alphabets" checked/><label class="heading-chkbox">Alphabets</label>
+            <input type="checkbox" value="Numbers" class="chkbox" id="numbers"/><label class="heading-chkbox">Numbers</label>
+            <input type="checkbox" value="Special Characters" class="chkbox" id="specialChar"/><label class="heading-chkbox">Special Characters</label>
+        </div>
+        <div>
+            <label class="heading-chkbox">Set length of the password(Default 8)</label><input class="length-pass" id="pass-length" type="number" value="8" max="40" min="3">
+        </div>
+        <div class="">
+            <input type="button" class="generatePass" value="Generate Password" id="generatePass">
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
